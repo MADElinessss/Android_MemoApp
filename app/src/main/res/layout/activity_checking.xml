@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckingActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="MEMO"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_newmemo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112"></TextView>
+
+    <Button
+        android:id="@+id/btn_newmemo"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="335dp"
+        android:layout_marginEnd="16dp"
+        android:background="#BA9999"
+        android:backgroundTint="#ECE399"
+        android:text="New memo"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
+        app:strokeColor="#6C6969"
+        app:strokeWidth="1dp"
+        tools:ignore="MissingConstraints"></Button>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There is NO New Memo YET"
+            android:textAlignment="center"
+            android:textColor="#575050"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="20dp"
+            android:text="There is NO New Memo YET"
+            android:textAlignment="center"
+            android:textColor="#575050"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="20dp"
+            android:text="There is NO New Memo YET"
+            android:textAlignment="center"
+            android:textColor="#575050"
+            android:textSize="15dp"></TextView>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginTop="200dp"
+            android:alpha="0.7"
+            android:src="@drawable/start"></ImageView>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="320dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="350dp"
+            android:text="DELETE"
+            android:textColor="#F44336"
+            android:textAlignment="center"
+            android:textSize="10dp"></Button>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
